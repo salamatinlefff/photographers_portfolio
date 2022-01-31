@@ -85,8 +85,15 @@
 }
 
 .change-theme__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   margin-right: 0.5rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  width: 100%;
+  height: 100vh;
   color: var(--header-color-change-label);
   transform: scale(1);
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
