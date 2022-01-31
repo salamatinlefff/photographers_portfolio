@@ -1,0 +1,75 @@
+.burger {
+  position: relative;
+  z-index: 3;
+  --width: 5rem;
+  --height: 5rem;
+  --size-line: 0.3rem;
+  --time-transition: 0.5s;
+  width: var(--width);
+  height: var(--height);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.burger:hover {
+  filter: drop-shadow(0 0 1px var(--burger-color));
+  transform: scale(1.1);
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(50% - (var(--size-line) / 2));
+  height: var(--size-line);
+  background-color: var(--burger-color);
+  transition: transform var(--time-transition);
+}
+
+.burger__line::after,
+.burger__line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--size-line);
+  background-color: var(--burger-color);
+}
+
+.burger__line::before {
+  top: calc(
+    ((var(--height) / 2) - var(--height)) / 2 - var(--size-line) + 0.3rem
+  );
+}
+
+.burger__line::after {
+  top: calc(
+    (var(--height) - var(--height) / 2) / 2 + var(--size-line) - 0.3rem
+  );
+}
+
+.burger_active .burger__line {
+  background-color: transparent;
+  transform: rotate(270deg);
+}
+
+.burger_active .burger__line::before {
+  top: calc(50% - (var(--size-line) / 2));
+  transform: rotate(-45deg);
+}
+
+.burger_active .burger__line::after {
+  top: calc(50% - (var(--size-line) / 2));
+  transform: rotate(45deg);
+}
+
+@media (max-width: 580px) {
+  .burger {
+    display: flex;
+    align-self: center;
+    --width: 3.5rem;
+    --height: 3.5rem;
+  }
+}

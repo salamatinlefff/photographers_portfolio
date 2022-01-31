@@ -1,0 +1,81 @@
+.price {
+  padding: 10rem 2rem 10rem;
+  text-align: center;
+  color: var(--price-color-text);
+}
+
+.price__wrapper-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.price__wrapper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  max-width: 45rem;
+  width: 100%;
+  border: 0.3rem solid var(--price-card-border);
+}
+
+.price__card_title {
+  margin-bottom: 2rem;
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 5.6rem;
+}
+
+.price__price {
+  margin-bottom: 2rem;
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 4.8rem;
+  color: var(--price-color-price);
+}
+
+.price__wrapper-desc {
+  margin-bottom: 4rem;
+}
+
+.price__desc {
+  display: block;
+  width: 100%;
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+}
+
+.price__button {
+  background-color: var(--price-background-button);
+  color: var(--price-color-button);
+}
+
+.price__button:hover {
+  background-color: var(--price-background-button-hover);
+  color: var(--price-color-button-hover);
+}
+
+.price__button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding: 8rem 0 8rem 0.4rem;
+  }
+
+  .price__wrapper-cards {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .price__wrapper-card {
+    max-width: 42rem;
+  }
+}

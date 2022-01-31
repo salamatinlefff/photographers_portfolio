@@ -1,0 +1,136 @@
+.contacts {
+  padding: 6rem 2rem 19.5rem;
+  background-image: url("../img/contacts.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  color: var(--contacts-color-text);
+}
+
+.contacts-white-theme {
+  background-image: url(../img/white-theme-contacts1440.jpg);
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  max-width: 45rem;
+  max-height: 44.5rem;
+}
+
+.contacts__title {
+  margin-bottom: 4rem;
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 8rem;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contacts__input {
+  margin-bottom: 2rem;
+}
+
+.contacts__input,
+.contacts__textarea {
+  padding: 0.3rem 1.8rem;
+  max-width: 45rem;
+  width: 100%;
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: var(--contacts-color-text);
+  border: 2px solid var(--contacts-border-input);
+  background-color: var(--contacts-background-input);
+}
+
+.contacts__input:focus,
+.contacts__textarea:focus {
+  outline: 2px dashed var(--contacts-color-text);
+
+}
+
+.contacts__input::placeholder,
+.contacts__textarea::placeholder {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: var(--contacts-color-text);
+}
+
+.contacts__textarea {
+  min-height: 10rem;
+  margin-bottom: 3rem;
+  resize: none;
+}
+
+.contacts__button {
+  position: relative;
+  display: block;
+  z-index: 1;
+  border: none;
+}
+
+.contacts__button:hover {
+  background-color: var(--contacts-background-button-hover);
+  color: var(--contacts-color-button-hover);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    max-width: 76.8em;
+    width: 100vw;
+    height: 60rem;
+    margin-left: -6rem;
+    margin-right: -6.4rem;
+    padding: 6rem 0 11.1rem;
+    background-image: url(../img/contacts2.jpg);
+    background-repeat: no-repeat;
+    background-size: 76.8rem;
+  }
+
+  .contacts-white-theme {
+    background-image: url(../img/white-theme-contacts768.jpg);
+  }
+
+  .contacts__wrapper {
+    align-items: center;
+    margin: 0 auto;
+    max-height: 42.9rem;
+  }
+
+  .contacts__title {
+    margin: 0 auto 4rem;
+    font-size: 3.2rem;
+    line-height: 6.4rem;
+  }
+
+  .contacts__form {
+    align-items: center;
+  }
+
+  .contacts__textarea {
+    min-height: 10rem;
+    margin-bottom: 3rem;
+    resize: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .contacts {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 2rem 0 11.1rem;
+  }
+
+  .contacts__form {
+    padding: 0 2rem;
+  }
+}

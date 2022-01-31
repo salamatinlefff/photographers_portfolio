@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/default.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/burger.css">
+  <link rel="stylesheet" href="./assets/css/hero.css">
+  <link rel="stylesheet" href="./assets/css/skills.css">
+  <link rel="stylesheet" href="./assets/css/portfolio.css">
+  <link rel="stylesheet" href="./assets/css/video.css">
+  <link rel="stylesheet" href="./assets/css/price.css">
+  <link rel="stylesheet" href="./assets/css/contacts.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/white-theme.css">
+  <link rel="stylesheet" href="./assets/css/animations-button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="./assets/scripts/burger_menu.js" defer></script>
+  <script src="./assets/scripts/forwardingContacts.js" defer></script>
+  <script src="./assets/scripts/changePortfolioCards.js" defer></script>
+  <script src="./assets/scripts/changeLanguage.js" defer></script>
+  <script src="./assets/scripts/changeTheme.js" defer></script>
+  <script src="./assets/scripts/preloadImages.js" defer></script>
+  <script src="./assets/scripts/bubble-click-button.js" defer></script>
+  <script src="./assets/scripts/disperse-button-click.js" defer></script>
+  <script src="./assets/scripts/review.js" defer></script>
+  <script src="./assets/scripts/video.js" defer></script>
+  <title>Portfolio</title>
+</head>
+<body>
+<div class="container">
+  <header class="header header__container">
+
+    <svg class="header__camera" viewBox="0 0 50 50" width="50" height="50" xmlns="http://www.w3.org/2000/svg"><path d="M20.4506 5.2592c-1.3587.4377-2.505 1.2173-2.7905 1.8971l-.1203.2856-1.8837-.0089-.2445-.503c-.1863-.3833-.3486-.5592-.6853-.743l-.4399-.241h-3.1802c-4.1712 0-4.6972.2074-4.6972 1.8576v.4644l-.7094.3468C3.0844 9.8924 1.0354 12.416.2258 15.3546l-.2255.8202v10.0836c0 11.0114-.033 10.3.5471 11.8582 1.3006 3.492 4.3155 6.0186 8.0018 6.7092 1.2394.2323 31.6622.2323 32.9016 0 3.6863-.6896 6.7012-3.2162 8.0018-6.7092.5801-1.5582.5471-.8468.5471-11.8582V16.1748l-.2165-.7717c-1.1342-4.0384-4.0399-6.7913-8.149-7.724-.6142-.1394-1.4208-.174-4.9577-.2105l-4.2233-.0445-.1163-.2767c-.2865-.6818-1.516-1.5019-2.8706-1.914-1.0671-.325-7.9907-.3052-9.0157.0258Zm19.6095 5.563c2.9929.3034 5.3255 2.1304 6.3375 4.9652l.2755.7717.0281 9.3119c.032 10.6479.0641 10.1508-.7776 11.8632-.9478 1.9278-2.8596 3.3863-4.9948 3.8111-1.1432.2273-30.7174.2273-31.8576 0-2.1553-.4308-4.06-1.9169-5.062-3.9504-.7645-1.5523-.7424-1.1877-.7104-11.7239l.028-9.3119.3047-.8428c.977-2.6995 3.3646-4.5996 6.142-4.8872 1.1854-.1225 29.0782-.1294 30.2866-.0079v.001Zm-30.543 1.0662c-3.1382.4535-5.1632 3.0058-5.1632 6.5096v1.2974h6.7122l.2254-.4585c.993-2.0246 2.9929-4.2202 5.1442-5.65.8045-.5345 2.9257-1.6106 3.1752-1.6106.0581 0 .1052-.0435.1052-.0968 0-.1186-9.3704-.1117-10.199.0079v.001Zm20.7668-.0336c0 .0454.1653.1403.3667.2104 3.07 1.0642 6.8114 4.405 8.0879 7.2211l.1864.4101h6.7222V18.399c0-3.2706-1.513-5.4148-4.5009-6.3822-.5881-.1907-10.8613-.3428-10.8613-.161l-.001-.001Zm-6.2132.663c-11.4044 1.0978-16.9383 13.457-9.9776 22.2798 7.6961 9.7536 23.7837 4.9039 24.7927-7.474.6753-8.2893-6.633-15.5923-14.8151-14.8058Zm2.5931 3.4277c6.5689.9298 10.6639 8.0175 8.164 14.1319-2.8796 7.0442-12.1198 8.8505-17.4142 3.403-7.0228-7.226-.8317-18.9617 9.2502-17.5349Zm-2.7915 1.6264c-5.9106.8231-9.3193 6.7755-6.9838 12.1982 2.6813 6.2241 11.672 6.9958 15.4875 1.33 4.1752-6.1994-1.0811-14.5607-8.5037-13.5282Zm3.8445 1.3379c1.1413.3498 1.995 1.167 2.015 1.9268.0461 1.752-3.5029 1.6966-4.6902-.0731-.9028-1.3448.7054-2.4584 2.6752-1.8537ZM22.701 32.2552c1.0811.2253 2.6913 1.2005 2.6913 1.6294 0 1.0019-3.6342.3547-4.6953-.836-.7334-.824.1594-1.1778 2.004-.7934Zm19.2118 3.7439c-2.019.6176-1.6282 3.3872.4769 3.3803 2.1412-.0069 2.3005-3.1165.1743-3.406-.2154-.0296-.508-.0178-.6512.0267v-.001Z" fill="currentColor"/></svg>
+
+    
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#skills" class="header__link" data-i18n="skills">Skills</a>
+        </li>
+  
+        <li class="nav__item">
+          <a href="#portfolio" class="header__link" data-i18n="portfolio">Portfolio</a>
+        </li>
+  
+        <li class="nav__item">
+          <a href="#video" class="header__link" data-i18n="video">Video</a>
+        </li>
+  
+        <li class="nav__item">
+          <a href="#price" class="header__link" data-i18n="price">Price</a>
+        </li>
+  
+        <li class="nav__item">
+          <a href="#contacts" class="header__link" data-i18n="contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__change-language">
+      <input class="change-language__input" type="radio" id="en" name="language" data-language="en">
+      <label class="change-language__label" for="en">en</label>
+      /
+      <input class="change-language__input" type="radio" id="ru" name="language" data-language="ru">
+      <label class="change-language__label" for="ru">ru</label>
+    </div>
+
+    <input class="change-theme__input" type="radio" id="change-theme" name="change-language">
+    <label class="change-theme__label" for="change-theme">
+      <svg width="45" height="45" viewBox="0 0 45 45"xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.8374 17.2125C23.9499 17.2125 25.0375 17.5424 25.9625 18.1605C26.8875 18.7786 27.6085 19.6571 28.0342 20.6849C28.46 21.7127 28.5714 22.8437 28.3543 23.9349C28.1373 25.026 27.6015 26.0283 26.8149 26.815C26.0282 27.6016 25.0259 28.1374 23.9348 28.3544C22.8436 28.5715 21.7126 28.4601 20.6848 28.0343C19.657 27.6086 18.7785 26.8876 18.1604 25.9626C17.5423 25.0376 17.2124 23.95 17.2124 22.8375C17.2143 21.3462 17.8075 19.9166 18.862 18.8621C19.9165 17.8076 21.3461 17.2144 22.8374 17.2125ZM22.8374 14.4C21.1686 14.4 19.5373 14.8949 18.1498 15.822C16.7622 16.7491 15.6808 18.0669 15.0422 19.6086C14.4036 21.1504 14.2365 22.8469 14.562 24.4836C14.8876 26.1203 15.6912 27.6237 16.8712 28.8037C18.0512 29.9837 19.5546 30.7873 21.1913 31.1129C22.828 31.4384 24.5245 31.2713 26.0663 30.6327C27.608 29.9941 28.9258 28.9127 29.8529 27.5251C30.7801 26.1376 31.2749 24.5063 31.2749 22.8375C31.2749 20.5997 30.386 18.4536 28.8036 16.8713C27.2213 15.2889 25.0752 14.4 22.8374 14.4Z" fill="currentColor"/>
+        <path d="M7.58521 9.58078L9.57364 7.59094L14.504 12.5213L12.5155 14.5097L7.58521 9.58078Z" fill="currentColor"/>
+        <path d="M2.8125 21.1008H9.84375V23.9133H2.8125V21.1008Z" fill="currentColor"/>
+        <path d="M7.58521 35.4333L12.5155 30.503L14.504 32.4928L9.57364 37.4217L7.58521 35.4333Z" fill="currentColor"/>
+        <path d="M21.0938 35.1633H23.9062V42.1945H21.0938V35.1633Z" fill="currentColor"/>
+        <path d="M30.4973 32.4928L32.4858 30.503L37.4161 35.4333L35.4276 37.4217L30.4973 32.4928Z" fill="currentColor"/>
+        <path d="M35.1562 21.1008H42.1875V23.9133H35.1562V21.1008Z" fill="currentColor"/>
+        <path d="M30.4973 12.5213L35.4276 7.59094L37.4161 9.58078L32.4858 14.5097L30.4973 12.5213Z" fill="currentColor"/>
+        <path d="M21.0938 2.81953H23.9062V9.85078H21.0938V2.81953Z" fill="currentColor"/>
+        </svg>
+    </label>
+      
+    <button class="burger">
+      <span class="burger__line"></span>
+    </button>
+    
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="hero__title " data-i18n="hero-title">Alexa Rise</h1>
+    <p class="hero__desc"data-i18n="hero-text">
+      Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+    </p>
+    <button class="button hero__button  animation-button-hover" data-i18n="hire">Hire me
+    </button>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="title_wrapper skills__title_wrapper">
+      <h2 class="title" data-i18n="skills">Skills</h2>
+    </div>
+    <div class="skills__list">
+      <div class="skills__item">
+        <svg class="skills__icons" width="62" height="50" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M30.897 50.036H6.505c-.027 0-.058.001-.09.001C2.872 50.037 0 47.165 0 43.622c0-.032 0-.063.001-.095v.005a1874.441 1874.441 0 0 0 0-28.324v-.036c0-3.553 2.88-6.433 6.433-6.433h48.981c.082-.004.178-.006.275-.006 3.395 0 6.147 2.752 6.147 6.147 0 .103-.003.205-.008.306l.001-.014v28.36c.007.109.011.236.011.365 0 3.395-2.752 6.147-6.147 6.147-.104 0-.208-.003-.311-.008l.015.001-24.501-.001Zm0-6.165c.042 0 .093.001.143.001 7.974 0 14.439-6.465 14.439-14.439S39.014 14.994 31.04 14.994c-7.962 0-14.418 6.444-14.439 14.4v.002c.049 7.885 6.387 14.273 14.248 14.403h.012l.036.072ZM12.384 19.049c-.039-1.121-.948-2.018-2.071-2.037h-.002c-1.135 0-2.055.92-2.055 2.055 0 1.135.92 2.055 2.055 2.055 1.137-.02 2.053-.936 2.073-2.071v-.002ZM42.28 6.165H19.532c.357-1.43.679-2.806 1.036-4.182.078-1.13 1.014-2.017 2.157-2.017.134 0 .266.012.393.036L23.105 0h15.833c.07-.008.151-.013.232-.013 1.049 0 1.915.779 2.054 1.789l.001.011c.34 1.287.661 2.573.983 3.86.036.161.036.322.071.518h.001Z" fill="currentColor"/><path d="M30.861 43.799c-7.959-.021-14.402-6.477-14.402-14.439 0-7.974 6.465-14.439 14.439-14.439s14.439 6.465 14.439 14.439c0 .05 0 .1-.001.151v-.008c-.121 7.909-6.551 14.277-14.473 14.296h-.002Zm0-4.128c5.695 0 10.311-4.616 10.311-10.311s-4.616-10.311-10.311-10.311c-5.682 0-10.291 4.596-10.311 10.273v.074c0 5.675 4.6 10.275 10.275 10.275.038 0 .076 0 .113-.001h-.006l-.071.001Z" fill="currentColor"/><path d="M12.384 19.049c-.019 1.125-.916 2.034-2.034 2.073h-.004c-1.135 0-2.055-.92-2.055-2.055 0-1.135.92-2.055 2.055-2.055 1.109.038 1.999.928 2.037 2.034v.004l.001-.001Z" fill="currentColor"/><path d="M31.129 21.1401c4.378.144 7.89 3.661 8.023 8.029v.013c.002.038.004.083.004.129 0 1.132-.884 2.057-2 2.123h-.024c-1.145 0-2.073-.928-2.073-2.073-.039-2.252-1.844-4.069-4.087-4.128h-.006c-.017 0-.036.001-.056.001-1.125 0-2.037-.912-2.037-2.037 0-.032.001-.063.002-.095v.004c.054-1.101.961-1.974 2.071-1.974.064 0 .127.003.189.008l-.008-.001.002.001Z" fill="currentColor"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h62v50H0z"/></clipPath></defs></svg>
+        <h3 class="skills__title" data-i18n="skill-title-1">Digital photography</h3>
+        <p class="skills__desc" data-i18n="skill-text-1">High-quality photos in the studio and on the nature</p>
+      </div>
+    
+
+      <div class="skills__item">
+        <svg class="skills__icons" width="60" height="50" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#b)"><path d="M59.843 1.307v47.474c-.378.754-1.145 1.262-2.031 1.262-.064 0-.127-.003-.19-.008l.008.001H2.194c-.066.008-.143.012-.221.012-1.097 0-1.986-.889-1.986-1.986 0-.078.004-.155.013-.231l-.001.009V2.161a2.0611 2.0611 0 0 1-.009-.184C-.01.88.879-.009 1.976-.009c.071 0 .14.004.209.011L2.176.001h55.436c.075-.009.162-.015.251-.015.887 0 1.648.539 1.974 1.307l.005.014h.001ZM22.544 24.983v5.592c.001.366.052.72.146 1.056l-.007-.028c.355.9 1.218 1.525 2.226 1.525.51 0 .983-.16 1.371-.433l-.008.005c3.328-1.916 6.62-3.85 9.913-5.801.68-.368 1.133-1.076 1.133-1.89 0-.814-.454-1.522-1.122-1.885l-.011-.006c-3.293-2.021-6.672-3.955-10.052-5.906-.353-.22-.782-.351-1.241-.351-1.309 0-2.369 1.061-2.369 2.369 0 .05.002.1.005.149v-.007c.122 1.864.017 3.746.017 5.61l-.001.001ZM9.443 6.551V3.572H3.572v2.979h5.871ZM3.484 46.376h5.958v-2.927H3.484v2.927ZM18.833 3.571h-5.767v2.962h5.767V3.571Zm3.623 0v2.962h5.784V3.484l-5.784.087Zm15.157 2.98V3.572h-5.767v2.962l5.767.017Zm9.425-2.98h-5.819v2.962h5.819V3.571Zm-9.407 42.823v-2.84h-5.784v2.927l5.784-.087Zm-18.816 0v-2.84h-5.767v2.927l5.767-.087Zm9.425 0v-2.84h-5.767v2.944l5.767-.104Zm18.798-2.945h-5.819v2.927h5.819v-2.927Zm9.251-36.898V3.485h-5.662v3.066h5.662Zm0 36.898h-5.662v2.944h5.679l-.017-2.944Z" fill="currentColor"/></g><defs><clipPath id="b"><path fill="currentColor" d="M0 0h60v50H0z"/></clipPath></defs></svg>
+        <h3 class="skills__title" data-i18n="skill-title-2">Video shooting</h3>
+        <p class="skills__desc" data-i18n="skill-text-2">Capture your moments so that they always stay with you</p>
+      </div>
+    
+
+      <div class="skills__item">
+        <svg class="skills__icons" width="66" height="50" viewBox="0 0 66 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_6_146)">
+          <path d="M-1.41598e-05 48.5029V1.49692C0.361986 0.60892 1.21999 -0.00608008 2.21999 -0.00608008C2.27999 -0.00608008 2.33999 -0.00408008 2.39899 0.000919922H2.39099H63.727C63.784 -0.00408008 63.851 -0.00708008 63.918 -0.00708008C65.158 -0.00708008 66.163 0.99792 66.163 2.23792C66.163 2.30492 66.16 2.37192 66.154 2.43692L66.155 2.42892C66.155 11.9029 66.155 21.3779 66.155 30.8339C66.155 36.4749 66.155 42.1149 66.155 47.7559C66.163 47.8219 66.167 47.8989 66.167 47.9769C66.167 49.0759 65.276 49.9669 64.177 49.9669C64.147 49.9669 64.117 49.9659 64.087 49.9649H64.091H2.64499C2.54299 49.9789 2.42599 49.9879 2.30599 49.9879C1.28699 49.9879 0.407986 49.3869 0.00498584 48.5209L-0.00201416 48.5049L-1.41598e-05 48.5029ZM62.066 4.14392H4.12499V32.0919L4.76399 31.6539L15.991 23.6039C16.388 23.2059 16.936 22.9599 17.543 22.9599C18.15 22.9599 18.698 23.2059 19.095 23.6039L30.888 32.0559C32.713 33.3699 34.539 34.6849 36.364 35.9629C36.696 36.2189 37.117 36.3739 37.575 36.3739C38.476 36.3739 39.237 35.7759 39.482 34.9549L39.486 34.9409C39.537 34.7709 39.566 34.5759 39.566 34.3729C39.566 33.5999 39.141 32.9259 38.511 32.5729L38.501 32.5679C35.9577 30.7793 33.469 28.9843 31.035 27.1829L30.469 26.7629L30.798 26.5069L40.966 19.2049C41.363 18.8069 41.911 18.5609 42.518 18.5609C43.125 18.5609 43.673 18.8069 44.07 19.2049L61.412 31.6549L62.051 32.0749L62.066 4.14392Z" fill="currentColor"/>
+          <path d="M26.962 9.34597C29.987 9.34597 32.438 11.798 32.438 14.822C32.484 15.09 32.511 15.399 32.511 15.713C32.511 18.738 30.059 21.189 27.035 21.189C24.011 21.189 21.559 18.737 21.559 15.713C21.559 15.398 21.586 15.09 21.637 14.789L21.632 14.821C21.632 14.82 21.632 14.82 21.632 14.819C21.632 11.846 24.001 9.42597 26.955 9.34497H26.963L26.962 9.34597Z" fill="currentColor"/>
+          </g><defs><clipPath id="clip0_6_146"><rect width="66" height="50" fill="currentColor"/></clipPath>
+          </defs>
+          </svg>
+        <h3 class="skills__title" data-i18n="skill-title-3">Retouch</h3>
+        <p class="skills__desc" data-i18n="skill-text-3">I strive to make photography surpass reality</p>
+      </div>
+
+
+      <div class="skills__item">
+      <svg class="skills__icons" width="32" height="50" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#c)"><path d="M4.371 50v-2.898h10.216V40.93C6.391 40.113.038 33.272 0 24.938v-.004h2.881c.014 4.397 2.193 8.282 5.526 10.647l.041.027c2.072 1.545 4.683 2.474 7.511 2.474.237 0 .473-.007.708-.019l-.033.001c6.993-.339 12.543-6.06 12.606-13.091v-.006h2.898v.111c0 4.15-1.607 7.925-4.233 10.737l.008-.009c-2.607 2.85-6.217 4.744-10.268 5.12l-.063.005v6.09h10.249v2.947L4.371 50Z" fill="currentColor"/><path d="M26.326 11.706v4.404H19.04v2.914h7.269v4.388h-7.253v2.947h7.138c-.719 5.01-4.982 8.818-10.134 8.818s-9.415-3.808-10.128-8.763l-.006-.055h7.171v-2.898H5.861v-4.404h7.236v-2.931H5.861v-4.371h7.236V8.792H5.959C6.724 3.832 10.963.078 16.078.078c5.109 0 9.344 3.745 10.109 8.64l.007.058h-7.155v2.931l7.287-.001Z" fill="currentColor"/></g><defs><clipPath id="c"><path fill="currentColor" d="M0 0h32v50H0z"/></clipPath></defs></svg>
+      <h3 class="skills__title" data-i18n="skill-title-4">Audio</h3>
+      <p class="skills__desc" data-i18n="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
+    </div>
+  </div>
+  
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="title_wrapper">
+      <h2 class="title" data-i18n="portfolio">Portfolio</h2>
+    </div>
+
+    <div class="portfolio_wrapper-buttons">
+      <button class="button portfolio__button disperse-button-click" data-i18n="winter" data-season="winter">Winter</button>
+      <button class="button portfolio__button disperse-button-click" data-i18n="spring" data-season="spring">Spring</button>
+      <button class="button portfolio__button disperse-button-click" data-i18n="summer" data-season="summer">Summer</button>
+      <button class="button portfolio__button button_active disperse-button-click" data-i18n="autumn" data-season="autumn">Autumn</button>
+    </div>
+
+    <div class="portfolio__wrapper-cards">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/1.jpg" alt="kiss" class="cards_img-kiss">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/2.jpg" alt="sun, horse, tree" class="cards_img-kiss">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/3.jpg" alt="kidd" class="cards_img-kiss">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/4.jpg" alt="forest" class="cards_img-kiss">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/5.jpg" alt="old pair" class="cards_img-kiss">
+      <img class="portfolio__image" width="450" height="560" src="./assets/img/autumn/6.jpg" alt="girl with phone" class="cards_img-kiss">
+    </div>
+
+  </section>
+
+  <section class="video" id="video">
+    <div class="title_wrapper">
+      <h2 class="title" data-i18n="video">Video</h2>
+    </div>
+    <div class="video__player-wrapper j-player">
+      <em class="fas fa-pause player__main-icon j-pause">pause</em>
+      <em class="fas fa-play player__main-icon j-play">play</em>
+      <em class="fas fa-backward player__main-icon j-backward">- 5 sec.</em>
+      <em class="fas fa-forward player__main-icon j-forward">+ 5 sec.</em>
+      <video class="player__video" poster="./assets/img/married.jpg" src="./assets/video/video.mp4"></video>
+      <button class="video__play-button play-button">
+        <svg viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M58.521.1357c-.4991.1205-2.9511.5507-5.4481.9554C6.1742 8.6981-16.0083 65.9044 13.0263 104.367c9.0418 11.977 29.806 25.539 30.8344 20.139.1288-.674-1.1073-1.528-4.1753-2.882-12.5863-5.559-23.9757-16.512-30.19-29.0302C-13.0743 47.1276 25.5403-4.3232 75.965 4.0285c7.5749 1.255 8.8905-1.3607 1.4669-2.9172C74.053.4028 60.344-.304 58.521.1363V.1357Zm.3026 13.407c-8.8674 1.3067-20.2781 5.8469-20.2781 8.0687 0 1.7238 1.2806 1.5903 5.9608-.6213C70.1424 8.8779 101.354 22.1306 110.64 49.0716c15.435 44.7808-35.5206 82.6884-74.213 55.2074-21.5006-15.27-26.4586-45.6-11.0239-67.4394 4.0958-5.7953 1.9405-8.2455-2.2419-2.5482-25.769 35.1052 1.1352 84.6906 44.6099 82.2156 43.8869-2.499 64.8699-55.0864 34.6699-86.8875-11.0716-11.6582-28.9322-18.2415-43.6168-16.078l-.0006.0012Zm52.7644 7.9061c-.9.9002-.212 2.5113 2.669 6.2552 21.363 27.7539 14.369 69.2389-14.9631 88.756-13.2171 8.795-24.8219 11.232-46.5231 9.773-2.0437-.137-2.4217.019-2.4217 1.004 0 4.474 25.9749 3.261 38.8538-1.815 37.7651-14.883 52.6551-62.9274 29.8911-96.4481-4.32-6.3602-6.492-8.5387-7.506-7.5245v-.0006ZM47.2645 44.1107c-1.0735 1.1856-1.1655 2.576-1.3298 20.0924-.27 28.7966-3.1362 27.9261 31.6343 9.608 16.9455-8.928 17.0405-8.6479-7.2634-21.3968-19.0017-9.9676-20.9107-10.6559-23.0411-8.3036Zm20.9992 10.8945c18.4623 9.6429 18.5584 9.7029 17.2671 10.7746C84.0829 66.982 51.1615 84 50.285 84c-.7038 0-.8438-3.1647-.8438-19.0676 0-13.375.1976-19.0682.661-19.0682.3632 0 8.5363 4.1136 18.1621 9.141h-.0006Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <div class="player__panel">
+        <div class="player__lines j-line">
+          <div class="player__hint j-hint"></div>
+          <div class="player__line player__line_current"></div>
+          <div class="player__line player__line_ghost j-line-ghost player__line_ghost"></div>
+          <div class="player__line player__line_full"></div>
+        </div>
+        <div class="player__panel-block">
+          <button class="player__panel-button j-toggle-video play-button">
+            <em class="fa-solid fa-play"></em>
+          </button>
+          <button class="player__panel-button player__panel-button_volume">
+            <em class="fa player__volume-icon j-toggle-volume"></em>
+            <input type="range" class="player__volume j-volume-input">
+          </button>
+          <span class="player__duration j-duration">00:00</span>
+        </div>
+        <div class="player__panel-block">
+          <button class="player__panel-button">
+            <em class="fas fa-expand j-fullscreen player__fullscreen-icon"></em>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="price" id="price">
+    <div class="title_wrapper">
+      <h2 class="title" data-i18n="price">Price</h2>
+    </div>
+    <div class="price__wrapper-cards">
+      <div class="price__wrapper-card">
+        <h3 class="price__card_title" data-i18n="price-title-1">Standard</h3>
+        <p class="price__price">500 $</p>
+        <div class="price__wrapper-desc">
+        <span class="price__desc" data-i18n="price-description-1-span-1">One location</span>
+          <span class="price__desc" data-i18n="price-description-1-span-2">120 photos in color</span>
+          <span class="price__desc" data-i18n="price-description-1-span-3">12 photos in retouch</span>
+          <span class="price__desc" data-i18n="price-description-1-span-4">Readiness 2-3 weeks</span>
+          <span class="price__desc" data-i18n="price-description-1-span-5">Make up, visage</span>
+        </div>
+        <button class="button price__button" data-i18n="order">Order shooting</button>
+      </div>
+  
+      <div class="price__wrapper-card">
+        <h3 class="price__card_title" data-i18n="price-title-2">Premium</h3>
+        <p class="price__price">700 $</p>
+        <div class="price__wrapper-desc">
+          <span class="price__desc" data-i18n="price-description-2-span-1">One or two locations</span>
+          <span class="price__desc" data-i18n="price-description-2-span-2">200 photos in color</span>
+          <span class="price__desc" data-i18n="price-description-2-span-3">20 photos in retouch</span>
+          <span class="price__desc" data-i18n="price-description-2-span-4">Readiness 1-2 weeks</span>
+          <span class="price__desc" data-i18n="price-description-2-span-5">Make up, visage</span>
+        </div>
+        <button class="button price__button" data-i18n="order">Order shooting</button>
+      </div>
+  
+      <div class="price__wrapper-card">
+        <h3 class="price__card_title" data-i18n="price-title-3">Gold</h3>
+        <p class="price__price">1000 $</p>
+        <div class="price__wrapper-desc">
+          <span class="price__desc" data-i18n="price-description-3-span-1">Three locations or more</span>
+          <span class="price__desc" data-i18n="price-description-3-span-2">300 photos in color</span>
+          <span class="price__desc" data-i18n="price-description-3-span-3">50 photos in retouch</span>
+          <span class="price__desc" data-i18n="price-description-3-span-4">Readiness 1 week</span>
+          <span class="price__desc" data-i18n="price-description-3-span-5">Make up, visage, hairstyle</span>
+        </div>
+        <button class="button price__button" data-i18n="order">Order shooting</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="contacts__wrapper">
+      <h2 class="contacts__title" data-i18n="contact-me">Contact me</h2>
+    <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post" target="blank">
+      <input class="contacts__input contacts__input-email" type="email" placeholder="E-mail" name="e-mail" data-i18n-input="email-input" required>
+      <input class="contacts__input contacts__input-tel" type="tel" placeholder="Phone" name="phone" data-i18n-input="phone-input" required>
+      <textarea class="contacts__textarea" name="message" data-i18n-input="text-area" placeholder="Message" required></textarea>
+      <button class="button contacts__button animation-button-click" data-i18n="send-message">Send message</button>
+    </form>
+    </div>
+
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__data">
+      <span>©</span>
+    <time datetime="2022-01-12">2022</time>
+    <a class="footer__github" href="https://github.com/salamatinlefff" target="blank">@salamatinlefff</a>
+    </div>
+
+    <a class="footer__rss" href="https://rs.school/js-stage0/" target="blank">Rolling Scopes School</a>
+
+    <ul class="footer__social-list">
+      <li class="footer__social_item">
+        <a href="#" class="footer__icon">
+        <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.36.667c2.4 0 2.907.027 4.133.08 1.413.067 2.387.293 3.227.627.88.333 1.627.8 2.36 1.533.747.733 1.2 1.48 1.547 2.36.333.84.547 1.813.613 3.24.067 1.267.08 1.76.08 4.427v2.133c0 2.667-.013 3.16-.08 4.427-.023 1.165-.246 2.27-.636 3.294l.022-.067c-.347.88-.8 1.627-1.533 2.36-.747.747-1.493 1.2-2.373 1.547-.84.333-1.813.547-3.227.613-1.267.067-1.773.08-4.44.08h-2.12c-2.667 0-3.16-.013-4.44-.08-1.165-.023-2.27-.246-3.294-.636l.067.022c-.923-.353-1.71-.874-2.359-1.533l-.001-.001a6.5445 6.5445 0 0 1-1.532-2.329l-.015-.045c-.367-.956-.59-2.062-.613-3.217v-.01c-.053-1.042-.083-2.263-.083-3.49 0-.226.001-.452.003-.677v.034-2.733c0-2.4.027-2.907.08-4.133.067-1.413.293-2.387.613-3.227.347-.88.8-1.627 1.547-2.36a6.2702 6.2702 0 0 1 2.317-1.519l.043-.014c.955-.371 2.06-.599 3.215-.626h.012c1.227-.053 1.733-.08 4.133-.08h2.734Zm.027 2.4H12.6c-2.307 0-2.8.027-4 .08-1.293.053-2 .267-2.467.453-.627.24-1.067.533-1.533 1-.466.467-.76.907-1 1.533-.173.467-.4 1.173-.453 2.48-.053 1.2-.08 1.68-.08 4v2.773c0 2.32.027 2.8.08 4 .053 1.293.267 2 .453 2.467.24.627.533 1.067 1 1.533.467.466.907.76 1.533 1 .467.187 1.173.4 2.48.453 1.293.067 1.76.08 4.64.08h1.48c2.893 0 3.347-.013 4.653-.08 1.293-.053 2-.267 2.467-.453.627-.24 1.067-.533 1.533-1 .466-.467.76-.907 1-1.533.187-.467.4-1.173.453-2.467.067-1.307.08-1.76.08-4.653v-1.467c0-2.893-.013-3.36-.08-4.667-.053-1.293-.267-2-.453-2.467-.226-.601-.567-1.114-.999-1.532l-.001-.001a4.141 4.141 0 0 0-1.505-.991l-.028-.009c-.732-.276-1.578-.441-2.462-.453h-.005c-1.028-.052-2.231-.082-3.442-.082-.196 0-.392.001-.588.002h.03l.001.001ZM14 7.147c3.781 0 6.847 3.065 6.847 6.847 0 3.782-3.065 6.847-6.847 6.847-3.781 0-6.847-3.065-6.847-6.847 0-3.782 3.065-6.847 6.847-6.847Zm0 2.4c-2.456 0-4.447 1.991-4.447 4.447s1.991 4.447 4.447 4.447 4.447-1.991 4.447-4.447S16.456 9.547 14 9.547Zm7.107-4.267c.884 0 1.6.716 1.6 1.6 0 .884-.716 1.6-1.6 1.6-.884 0-1.6-.716-1.6-1.6 0-.884.716-1.6 1.6-1.6Z" fill="currentColor"/>
+        </svg>
+      </a>
+      </li>
+
+      <li class="footer__social_item">
+        <a href="#" class="footer__icon">
+        <svg width="17" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.04 27.333 5 15.666H0v-5h5V7.333C5 2.84 7.787.666 11.8.666c1.92 0 3.573.133 4.053.2v4.707h-2.787c-2.173 0-2.6 1.04-2.6 2.56v2.533h6.2l-1.667 5h-4.533v11.667H5.039h.001Z" fill="currentColor"/>
+        </svg>
+      </a>
+      </li>
+
+      <li class="footer__social_item"> 
+        <a href="#" class="footer__icon">
+        <svg width="28" height="22" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.333 2.84c-1 .493-2 .667-3.173.827 1.173-.667 2-1.667 2.333-3-1.005.608-2.176 1.071-3.423 1.322l-.07.012C21.969.987 20.56.355 19.004.334H19c-2.84 0-5.333 2.507-5.333 5.507 0 .493 0 .827.173 1.16-4.578-.178-8.619-2.337-11.311-5.639l-.022-.028c-.425.726-.676 1.598-.676 2.529 0 .109.003.218.01.326l-.001-.015c.034 1.878 1.009 3.521 2.473 4.481l.021.013c-.84 0-1.667-.333-2.507-.667 0 2.667 1.84 4.84 4.333 5.333-.493.173-1 .173-1.493.173-.333 0-.667 0-1-.173.667 2.173 2.667 3.84 5.173 3.84-1.8 1.455-4.116 2.335-6.637 2.335-.071 0-.142-.001-.213-.002h.011H.668C3.033 21.016 5.904 21.936 8.984 22h.017c10 0 15.507-8.333 15.507-15.507v-.667c1.147-.79 2.093-1.787 2.803-2.944l.024-.042h-.002Z" fill="currentColor"/>
+        </svg>
+      </a>
+      </li>
+
+      <li class="footer__social_item">
+        <a href="#" class="footer__icon">
+        <svg width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 .667C6.657.694.714 6.653.714 14c0 5.599 3.452 10.393 8.343 12.368l.089.032c-.133-1.053-.227-2.667.04-3.827l1.56-6.627s-.4-.8-.4-1.973c0-1.853 1.08-3.227 2.427-3.227 1.133 0 1.693.853 1.693 1.867 0 1.147-.733 2.853-1.12 4.44-.32 1.333.667 2.413 1.987 2.413 2.373 0 4.187-2.493 4.187-6.093 0-3.2-2.293-5.413-5.573-5.413a4.9501 4.9501 0 0 0-.253-.006c-3.189 0-5.773 2.585-5.773 5.773v.006c0 1.147.44 2.373.987 3.04.107.133.12.253.08.387l-.373 1.507c-.053.24-.2.307-.44.187-1.68-.787-2.72-3.2-2.72-5.173 0-4.2 3.067-8.053 8.827-8.053 4.613 0 8.227 3.28 8.227 7.693 0 4.6-2.907 8.293-6.933 8.293-1.333 0-2.613-.707-3.04-1.533l-.84 3.16c-.431 1.337-.992 2.498-1.688 3.563l.034-.056c1.17.372 2.516.587 3.911.587 7.364 0 13.333-5.97 13.333-13.333 0-7.347-5.942-13.306-13.282-13.333h-.003L14 .667Z" fill="currentColor"/>
+        </svg>
+      </a>
+      </li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
